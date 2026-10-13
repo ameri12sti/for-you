@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello, baby</title>
+</head>
+<body>
+
+<h1>Hello, my baby <3</h1>
+<p>Muhammad Nory Ilham.</p>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Letter For You ♡</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 35px 15px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #050505, #222, #080808);
+  color: #eee;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+/* HEADER */
+.label {
+  color: #999;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-top: 15px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #222;
+  margin: 18px 0 12px;
+}
+
+.subtitle {
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #888;
+  line-height: 2;
+}
+
+/* BMW-STYLE LOGO, DIBUAT DENGAN CSS */
+.bmw-logo {
+  width: 74px;
+  height: 74px;
+  margin: 28px auto 15px;
+  border-radius: 50%;
+  background: #080808;
+  border: 4px solid #d8d8d8;
+  outline: 2px solid #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 18px #ffffff12;
+}
+
+.bmw-inner {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  transform: rotate(0deg);
+}
+
+.bmw-inner span:nth-child(1),
+.bmw-inner span:nth-child(4) {
+  background: #f1f1f1;
+}
+
+.bmw-inner span:nth-child(2),
+.bmw-inner span:nth-child(3) {
+  background: #444;
+}
+
+.bmw-text {
+  position: absolute;
+  top: 2px;
+  color: white;
+  font: bold 9px Arial, sans-serif;
+  letter-spacing: 2px;
+  background: #080808;
+  padding: 0 3px;
+}
+
+/* KOTAK SURAT */
+.surat {
+  background: #f3f3f3;
+  color: #222;
+  max-width: 410px;
+  margin: 25px auto;
+  padding: 25px 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px #000;
+}
+
+.love {
+  font-size: 38px;
+  color: #222;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* ILUSTRASI SEDAN DARI SVG */
+.car {
+  width: 100%;
+  max-width: 340px;
+  margin: 20px auto;
+  color: #eee;
+}
+
+.car svg {
+  width: 100%;
+  height: auto;
+}
+
+.car-line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.car-detail {
+  fill: none;
+  stroke: #888;
+  stroke-width: 1.2;
+}
+
+/* SPARE PARTS */
+.parts-title {
+  font-family: monospace;
+  color: #aaa;
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin: 28px 0 15px;
+}
+
+.parts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9px;
+  max-width: 360px;
+  margin: 0 auto 25px;
+}
+
+.part {
+  border: 1px solid #444;
+  padding: 12px 3px 9px;
+  border-radius: 10px;
+  color: #ddd;
+  background: #151515;
+}
+
+.part svg {
+  width: 35px;
+  height: 35px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.part span {
+  display: block;
+  font: 8px monospace;
+  margin-top: 7px;
+  color: #aaa;
+}
+
+/* BUTTON */
+button {
+  background: #161616;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin: 10px auto;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #333;
+  border-color: #ddd;
+}
+
+/* ISI SURAT */
+.isi-surat {
+  display: none;
+  text-align: left;
+  background: #e5e5e5;
+  color: #222;
+  padding: 18px;
+  border-radius: 12px;
+  margin-top: 22px;
+  animation: muncul 0.6s ease;
+}
+
+.isi-surat.buka {
+  display: block;
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.penutup {
+  text-align: right;
+  font-style: italic;
+}
+
+footer {
+  font-family: monospace;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin: 30px 0 10px;
+}
+
+@media (max-width: 360px) {
+  .parts {
+    gap: 5px;
+  }
+
+  .part span {
+    font-size: 7px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="label">A LITTLE SOMETHING FOR YOU</div>
+
+<!-- LOGO BMW BERBASIS CSS -->
+<div class="bmw-logo" aria-label="Logo bergaya BMW">
+  <div class="bmw-inner">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="bmw-text">BMW</div>
+</div>
+
+<div class="surat">
+
+  <h1>A Little Letter For You</h1>
+
+  <p>
+   I made something for you, by ♡<br>
+  </p>
+
+  <!-- IKON KOMPONEN MOBIL -->
+  <div class="parts-title">THINGS YOU MIGHT LOVE</div>
+
+  <div class="parts">
+
+    <!-- BAN -->
+    <div class="part">
+      <svg viewBox="0 0 40 40">
+        <circle cx="20" cy="20" r="16" stroke-width="4"/>
+        <circle cx="20" cy="20" r="10"/>
+        <circle cx="20" cy="20" r="3"/>
+        <path d="M20 10 V17 M20 23 V30 M10 20 H17 M23 20 H30"/>
+      </svg>
+      <span>WHEEL</span>
+    </div>
+
+    <!-- KNALPOT -->
+    <div class="part">
+      <svg viewBox="0 0 40 40">
+        <path d="M5 15 H21 Q26 15 26 20 Q26 25 21 25 H5"/>
+        <path d="M26 17 L34 17 L37 20 L34 23 L26 23"/>
+        <path d="M8 18 V22 M12 18 V22"/>
+      </svg>
+      <span>EXHAUST</span>
+    </div>
+
+    <!-- REM -->
+    <div class="part">
+      <svg viewBox="0 0 40 40">
+        <circle cx="20" cy="20" r="15"/>
+        <circle cx="20" cy="20" r="8"/>
+        <circle cx="20" cy="20" r="3"/>
+        <path d="M20 5 V12 M20 28 V35 M5 20 H12 M28 20 H35"/>
+      </svg>
+      <span>BRAKES</span>
+    </div>
+
+    <!-- KUNCI PAS -->
+    <div class="part">
+      <svg viewBox="0 0 40 40">
+        <path d="M23 9 A10 10 0 0 0 11 21 L26 36 L32 30 L17 15 A4 4 0 0 1 23 9 Z"/>
+        <path d="M25 6 L31 3 L37 9 L34 15"/>
+      </svg>
+      <span>TOOLS</span>
+    </div>
+
+  </div>
+
+  <button onclick="bukaSurat()" id="tombol">
+    OPEN ME ♡
+  </button>
+
+  <div class="isi-surat" id="isiSurat">
+
+    <p>Hi Ilham♡</p>
+
+    <p>
+    Aku cuma mau bilang makasih yaa for everything yang
+    udah kamu kasih ke aku selama ini. Makasih udah
+    selalu sayang sama aku, selalu cinta sama aku, dan
+    selalu bikin aku ngerasa disayang dengan cara kamu
+    sendiri.
+    </p>
+    
+    <p>
+    Makasih karena selama sama kamu akhrinya aku bisa
+    ngerasain rasanya aman dan nyaman sama orang lain.
+    Makasih selalu berusaha bikin aku happy, selalu
+    nurutin aku, selalu ngusahain apa yang aku mau,
+    bahkan buat hal-hal kecil yang mungkin menurut kamu
+    biasa aja, tapi buat aku berarti banget. Aku tau
+    mungkin aku kadang banyak mau, kadang manja, kadang
+    gak pekaan, kadang suka bikin kamu bingung harus
+    gimana ngadepin aku, tapi kamu tetep sabar dan
+    selalu berusaha buat bikin aku bahagia. Honestly,
+    i'm very grateful having you in my life.
+    </p>
+    
+    <p>
+    Makasih yaa by selalu milih aku, selalu sayang sama
+    aku, dan udah ngasih aku banyak cinta yang kadang
+    mungkin aku sendiri nggak tau gimana cara balesnya.
+    Aku mungkin nggak selalu nunjukin seberapa
+    sayangnya aku ke kamu, but please know that i do
+    really appreciate you and everything you do for
+    me♡.
+    </p>
+    
+    <p>
+    Aku nggak minta hubungan kita selalu sempurna, aku
+    cuma mau kita tetep bareng, tetep
+    saling sayang, dan tetep milih satu sama lain
+    setiap harinya. Aku berharap kita bisa terus
+    belajar buat jadi lebih baik dan ke depannya kita
+    makin ngerti satu sama lain, makin sabar dan
+    semakin dewasa pas ngadepin masalah. I hope we get
+    to experience so many more beautiful things
+    together.
+    </p>
+    
+    <p>
+    Thank you for loving me the way you do. Thank you
+    for loving me the way you do. Thank you for still
+    being the person i hold so close to my heart until
+    this very day. You have a special place in my heart
+    that no one else could ever fill, and having you in
+    my life is something i will always be grateful for.
+    </p>
+    
+    <p>
+    I love you so much, more than words could ever
+    truly express. I hope we always find reasons to
+    stay, always have the patience and the heart to
+    forgive each other, and always have enough love to
+    keep finding our way back to one another, no matter
+    what life brings us.
+    </p>
+    
+    <p>
+    I LOVE YOU, ALWAYS♡
+    </p>
+    
+
+    <p class="penutup">
+      With endless love,<br>
+      Oclail Deby Syarifa ♡
+    </p>
+
+  </div>
+
+</div>
+
+<footer>
+  BUILT WITH CODE & A LITTLE FEELING ♡
+</footer>
+
+<script>
+function bukaSurat() {
+  const surat = document.getElementById("isiSurat");
+  const tombol = document.getElementById("tombol");
+
+  surat.classList.toggle("buka");
+
+  if (surat.classList.contains("buka")) {
+    tombol.textContent = "CLOSE LETTER ♡";
+  } else {
+    tombol.textContent = "OPEN ME ♡";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
+</body>
+</html>
